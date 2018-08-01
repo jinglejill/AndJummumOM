@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF9C57E02111489A00C7563A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C57DF2111489A00C7563A /* AppDelegate.m */; };
+		EF9C57E32111489A00C7563A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C57E22111489A00C7563A /* ViewController.m */; };
+		EF9C57E62111489A00C7563A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9C57E42111489A00C7563A /* Main.storyboard */; };
+		EF9C57E82111489C00C7563A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9C57E72111489C00C7563A /* Assets.xcassets */; };
+		EF9C57EB2111489C00C7563A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9C57E92111489C00C7563A /* LaunchScreen.storyboard */; };
+		EF9C57EE2111489C00C7563A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C57ED2111489C00C7563A /* main.m */; };
+		EF9C57F82111489C00C7563A /* AndJummumOMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C57F72111489C00C7563A /* AndJummumOMTests.m */; };
+		EF9C58032111489C00C7563A /* AndJummumOMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9C58022111489C00C7563A /* AndJummumOMUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF9C57F42111489C00C7563A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF9C57D32111489A00C7563A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF9C57DA2111489A00C7563A;
+			remoteInfo = AndJummumOM;
+		};
+		EF9C57FF2111489C00C7563A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF9C57D32111489A00C7563A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF9C57DA2111489A00C7563A;
+			remoteInfo = AndJummumOM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF9C57DB2111489A00C7563A /* AndJummumOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndJummumOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9C57DE2111489A00C7563A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF9C57DF2111489A00C7563A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF9C57E12111489A00C7563A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF9C57E22111489A00C7563A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF9C57E52111489A00C7563A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF9C57E72111489C00C7563A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF9C57EA2111489C00C7563A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF9C57EC2111489C00C7563A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF9C57ED2111489C00C7563A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF9C57F32111489C00C7563A /* AndJummumOMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AndJummumOMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9C57F72111489C00C7563A /* AndJummumOMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndJummumOMTests.m; sourceTree = "<group>"; };
+		EF9C57F92111489C00C7563A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF9C57FE2111489C00C7563A /* AndJummumOMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AndJummumOMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9C58022111489C00C7563A /* AndJummumOMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndJummumOMUITests.m; sourceTree = "<group>"; };
+		EF9C58042111489C00C7563A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF9C57D82111489A00C7563A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9C57F02111489C00C7563A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9C57FB2111489C00C7563A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF9C57D22111489A00C7563A = {
+			isa = PBXGroup;
+			children = (
+				EF9C57DD2111489A00C7563A /* AndJummumOM */,
+				EF9C57F62111489C00C7563A /* AndJummumOMTests */,
+				EF9C58012111489C00C7563A /* AndJummumOMUITests */,
+				EF9C57DC2111489A00C7563A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF9C57DC2111489A00C7563A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C57DB2111489A00C7563A /* AndJummumOM.app */,
+				EF9C57F32111489C00C7563A /* AndJummumOMTests.xctest */,
+				EF9C57FE2111489C00C7563A /* AndJummumOMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF9C57DD2111489A00C7563A /* AndJummumOM */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C57DE2111489A00C7563A /* AppDelegate.h */,
+				EF9C57DF2111489A00C7563A /* AppDelegate.m */,
+				EF9C57E12111489A00C7563A /* ViewController.h */,
+				EF9C57E22111489A00C7563A /* ViewController.m */,
+				EF9C57E42111489A00C7563A /* Main.storyboard */,
+				EF9C57E72111489C00C7563A /* Assets.xcassets */,
+				EF9C57E92111489C00C7563A /* LaunchScreen.storyboard */,
+				EF9C57EC2111489C00C7563A /* Info.plist */,
+				EF9C57ED2111489C00C7563A /* main.m */,
+			);
+			path = AndJummumOM;
+			sourceTree = "<group>";
+		};
+		EF9C57F62111489C00C7563A /* AndJummumOMTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C57F72111489C00C7563A /* AndJummumOMTests.m */,
+				EF9C57F92111489C00C7563A /* Info.plist */,
+			);
+			path = AndJummumOMTests;
+			sourceTree = "<group>";
+		};
+		EF9C58012111489C00C7563A /* AndJummumOMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C58022111489C00C7563A /* AndJummumOMUITests.m */,
+				EF9C58042111489C00C7563A /* Info.plist */,
+			);
+			path = AndJummumOMUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF9C57DA2111489A00C7563A /* AndJummumOM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9C58072111489C00C7563A /* Build configuration list for PBXNativeTarget "AndJummumOM" */;
+			buildPhases = (
+				EF9C57D72111489A00C7563A /* Sources */,
+				EF9C57D82111489A00C7563A /* Frameworks */,
+				EF9C57D92111489A00C7563A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AndJummumOM;
+			productName = AndJummumOM;
+			productReference = EF9C57DB2111489A00C7563A /* AndJummumOM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF9C57F22111489C00C7563A /* AndJummumOMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9C580A2111489C00C7563A /* Build configuration list for PBXNativeTarget "AndJummumOMTests" */;
+			buildPhases = (
+				EF9C57EF2111489C00C7563A /* Sources */,
+				EF9C57F02111489C00C7563A /* Frameworks */,
+				EF9C57F12111489C00C7563A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF9C57F52111489C00C7563A /* PBXTargetDependency */,
+			);
+			name = AndJummumOMTests;
+			productName = AndJummumOMTests;
+			productReference = EF9C57F32111489C00C7563A /* AndJummumOMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF9C57FD2111489C00C7563A /* AndJummumOMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9C580D2111489C00C7563A /* Build configuration list for PBXNativeTarget "AndJummumOMUITests" */;
+			buildPhases = (
+				EF9C57FA2111489C00C7563A /* Sources */,
+				EF9C57FB2111489C00C7563A /* Frameworks */,
+				EF9C57FC2111489C00C7563A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF9C58002111489C00C7563A /* PBXTargetDependency */,
+			);
+			name = AndJummumOMUITests;
+			productName = AndJummumOMUITests;
+			productReference = EF9C57FE2111489C00C7563A /* AndJummumOMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF9C57D32111489A00C7563A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Jummum Tech";
+				TargetAttributes = {
+					EF9C57DA2111489A00C7563A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					EF9C57F22111489C00C7563A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EF9C57DA2111489A00C7563A;
+					};
+					EF9C57FD2111489C00C7563A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EF9C57DA2111489A00C7563A;
+					};
+				};
+			};
+			buildConfigurationList = EF9C57D62111489A00C7563A /* Build configuration list for PBXProject "AndJummumOM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF9C57D22111489A00C7563A;
+			productRefGroup = EF9C57DC2111489A00C7563A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF9C57DA2111489A00C7563A /* AndJummumOM */,
+				EF9C57F22111489C00C7563A /* AndJummumOMTests */,
+				EF9C57FD2111489C00C7563A /* AndJummumOMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF9C57D92111489A00C7563A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9C57EB2111489C00C7563A /* LaunchScreen.storyboard in Resources */,
+				EF9C57E82111489C00C7563A /* Assets.xcassets in Resources */,
+				EF9C57E62111489A00C7563A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9C57F12111489C00C7563A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9C57FC2111489C00C7563A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF9C57D72111489A00C7563A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9C57E32111489A00C7563A /* ViewController.m in Sources */,
+				EF9C57EE2111489C00C7563A /* main.m in Sources */,
+				EF9C57E02111489A00C7563A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9C57EF2111489C00C7563A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9C57F82111489C00C7563A /* AndJummumOMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9C57FA2111489C00C7563A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9C58032111489C00C7563A /* AndJummumOMUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF9C57F52111489C00C7563A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF9C57DA2111489A00C7563A /* AndJummumOM */;
+			targetProxy = EF9C57F42111489C00C7563A /* PBXContainerItemProxy */;
+		};
+		EF9C58002111489C00C7563A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF9C57DA2111489A00C7563A /* AndJummumOM */;
+			targetProxy = EF9C57FF2111489C00C7563A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF9C57E42111489A00C7563A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF9C57E52111489A00C7563A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF9C57E92111489C00C7563A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF9C57EA2111489C00C7563A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF9C58052111489C00C7563A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF9C58062111489C00C7563A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF9C58082111489C00C7563A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				INFOPLIST_FILE = AndJummumOM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JummumCo.AndJummumOM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF9C58092111489C00C7563A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				INFOPLIST_FILE = AndJummumOM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JummumCo.AndJummumOM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF9C580B2111489C00C7563A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				INFOPLIST_FILE = AndJummumOMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JummumCo.AndJummumOMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AndJummumOM.app/AndJummumOM";
+			};
+			name = Debug;
+		};
+		EF9C580C2111489C00C7563A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				INFOPLIST_FILE = AndJummumOMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JummumCo.AndJummumOMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AndJummumOM.app/AndJummumOM";
+			};
+			name = Release;
+		};
+		EF9C580E2111489C00C7563A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				INFOPLIST_FILE = AndJummumOMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JummumCo.AndJummumOMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AndJummumOM;
+			};
+			name = Debug;
+		};
+		EF9C580F2111489C00C7563A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				INFOPLIST_FILE = AndJummumOMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JummumCo.AndJummumOMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AndJummumOM;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF9C57D62111489A00C7563A /* Build configuration list for PBXProject "AndJummumOM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9C58052111489C00C7563A /* Debug */,
+				EF9C58062111489C00C7563A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9C58072111489C00C7563A /* Build configuration list for PBXNativeTarget "AndJummumOM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9C58082111489C00C7563A /* Debug */,
+				EF9C58092111489C00C7563A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9C580A2111489C00C7563A /* Build configuration list for PBXNativeTarget "AndJummumOMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9C580B2111489C00C7563A /* Debug */,
+				EF9C580C2111489C00C7563A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9C580D2111489C00C7563A /* Build configuration list for PBXNativeTarget "AndJummumOMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9C580E2111489C00C7563A /* Debug */,
+				EF9C580F2111489C00C7563A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF9C57D32111489A00C7563A /* Project object */;
+}
