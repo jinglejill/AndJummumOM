@@ -163,8 +163,8 @@
         ((Branch *)copy).ledStatus = self.ledStatus;
         [copy setModifiedUser:[Utility modifiedUser]];
         [copy setModifiedDate:[Utility currentDateTime]];
-        ((Branch *)copy).replaceSelf = self.replaceSelf;
-        ((Branch *)copy).idInserted = self.idInserted;
+        
+        
     }
     
     return copy;

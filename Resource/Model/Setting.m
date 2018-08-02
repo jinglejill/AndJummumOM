@@ -108,8 +108,8 @@
         [copy setRemark:self.remark];
         [copy setModifiedUser:[Utility modifiedUser]];
         [copy setModifiedDate:[Utility currentDateTime]];
-        ((Setting *)copy).replaceSelf = self.replaceSelf;
-        ((Setting *)copy).idInserted = self.idInserted;
+        
+        
     }
     
     return copy;

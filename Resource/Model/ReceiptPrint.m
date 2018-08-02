@@ -102,8 +102,8 @@
         ((ReceiptPrint *)copy).receiptID = self.receiptID;
         [copy setModifiedUser:[Utility modifiedUser]];
         [copy setModifiedDate:[Utility currentDateTime]];
-        ((ReceiptPrint *)copy).replaceSelf = self.replaceSelf;
-        ((ReceiptPrint *)copy).idInserted = self.idInserted;
+        
+        
     }
     
     return copy;

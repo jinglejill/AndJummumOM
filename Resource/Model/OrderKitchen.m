@@ -192,8 +192,8 @@
         ((OrderKitchen *)copy).customerTableIDOrder = self.customerTableIDOrder;
         [copy setModifiedUser:[Utility modifiedUser]];
         [copy setModifiedDate:[Utility currentDateTime]];
-        ((OrderKitchen *)copy).replaceSelf = self.replaceSelf;
-        ((OrderKitchen *)copy).idInserted = self.idInserted;
+        
+        
     }
     
     return copy;

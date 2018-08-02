@@ -163,8 +163,8 @@
         ((Receipt *)copy).mergeReceiptID = self.mergeReceiptID;
         [copy setModifiedUser:[Utility modifiedUser]];
         [copy setModifiedDate:[Utility currentDateTime]];
-        ((Receipt *)copy).replaceSelf = self.replaceSelf;
-        ((Receipt *)copy).idInserted = self.idInserted;
+        
+        
     }
     
     return copy;

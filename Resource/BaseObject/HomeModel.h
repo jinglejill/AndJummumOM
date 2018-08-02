@@ -22,7 +22,6 @@
 - (void)itemsUpdatedWithManager:(NSObject *)objHomeModel;
 - (void)itemsUpdatedWithManager:(NSObject *)objHomeModel items:(NSArray *)items;
 - (void)itemsUpdated:(NSString *)alert;
-- (void)itemsSynced:(NSArray *)items;
 - (void)itemsDeleted;
 - (void)emailSent;
 - (void)photoUploaded;

@@ -101,8 +101,8 @@
         [copy setMacAddress:self.macAddress];
         [copy setModifiedUser:[Utility modifiedUser]];
         [copy setModifiedDate:[Utility currentDateTime]];
-        ((Printer *)copy).replaceSelf = self.replaceSelf;
-        ((Printer *)copy).idInserted = self.idInserted;
+        
+        
     }
     
     return copy;

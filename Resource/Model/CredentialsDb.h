@@ -14,8 +14,8 @@
 @property (retain, nonatomic) NSString * dbName;
 @property (retain, nonatomic) NSString * modifiedUser;
 @property (retain, nonatomic) NSDate * modifiedDate;
-@property (nonatomic) NSInteger replaceSelf;
-@property (nonatomic) NSInteger idInserted;
+
+
 
 @property (retain, nonatomic) NSString * name;
 @property (nonatomic) NSInteger branchID;

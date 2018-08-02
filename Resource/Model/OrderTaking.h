@@ -23,8 +23,8 @@
 @property (nonatomic) NSInteger receiptID;
 @property (retain, nonatomic) NSString * modifiedUser;
 @property (retain, nonatomic) NSDate * modifiedDate;
-@property (nonatomic) NSInteger replaceSelf;
-@property (nonatomic) NSInteger idInserted;
+
+
 
 @property (nonatomic) NSInteger menuOrderNo;
 @property (nonatomic) NSInteger subMenuOrderNo;
@@ -61,10 +61,7 @@
 +(NSMutableArray *)getOrderTakingListWithReceiptList:(NSMutableArray *)receiptList;
 +(NSMutableArray *)getOrderTakingListWithMenuID:(NSInteger)menuID;
 +(NSMutableArray *)getOrderTakingListWithMenuID:(NSInteger)menuID orderTakingList:(NSMutableArray *)orderTakingList;
-+(void)updateIdInserted:(OrderTaking *)orderTaking;
 +(void)deleteOrderTakingDuplicateKey:(OrderTaking *)orderTaking;
-+(void)insertOrderTakingDuplicateKey:(OrderTaking *)orderTaking;
-+(BOOL)checkIdInserted:(NSMutableArray *)orderTakingList;
 +(NSMutableArray *)getOrderTakingListWithStatus:(NSInteger)status takeAway:(NSInteger)takeAway menuID:(NSInteger)menuID orderTakingList:(NSMutableArray *)orderTakingList;
 +(NSMutableArray *)sortListByNoteIDListInText:(NSMutableArray *)orderTakingList;
 +(NSMutableArray *)sortListByModifiedDateDesc:(NSMutableArray *)orderTakingList;
