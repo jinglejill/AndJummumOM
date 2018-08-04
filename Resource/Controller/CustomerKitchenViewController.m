@@ -437,6 +437,7 @@ static NSString * const reuseHeaderViewIdentifier = @"CustomCollectionReusableVi
         if(segConPrintStatus.selectedSegmentIndex == 0)
         {
             NSString *message = [Setting getValue:@"008m" example:@"ส่งเข้าครัว"];
+            cell.btnOrderItAgain.tag = section;
             cell.btnOrderItAgain.hidden = NO;
             [cell.btnOrderItAgain setTitle:message forState:UIControlStateNormal];
             [cell.btnOrderItAgain removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
@@ -446,6 +447,7 @@ static NSString * const reuseHeaderViewIdentifier = @"CustomCollectionReusableVi
         else if(segConPrintStatus.selectedSegmentIndex == 1)
         {
             NSString *message = [Setting getValue:@"009m" example:@"เสิร์ฟ"];
+            cell.btnOrderItAgain.tag = section;
             cell.btnOrderItAgain.hidden = NO;
             [cell.btnOrderItAgain setTitle:message forState:UIControlStateNormal];
             [cell.btnOrderItAgain removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
@@ -536,8 +538,8 @@ static NSString * const reuseHeaderViewIdentifier = @"CustomCollectionReusableVi
             NSMutableAttributedString *strAllNote;
             NSMutableAttributedString *attrStringRemove;
             NSMutableAttributedString *attrStringAdd;
-            NSString *strRemoveTypeNote = [OrderNote getNoteNameListInTextWithOrderTakingID:orderTaking.orderTakingID noteType:-1 branchID:credentialsDb.branchID];
-            NSString *strAddTypeNote = [OrderNote getNoteNameListInTextWithOrderTakingID:orderTaking.orderTakingID noteType:1 branchID:credentialsDb.branchID];
+            NSString *strRemoveTypeNote = [OrderNote getNoteNameListInTextWithOrderTakingID:orderTaking.orderTakingID noteType:-1];
+            NSString *strAddTypeNote = [OrderNote getNoteNameListInTextWithOrderTakingID:orderTaking.orderTakingID noteType:1];
             if(![Utility isStringEmpty:strRemoveTypeNote])
             {
                 NSString *message = [Setting getValue:@"011m" example:@"ไม่ใส่"];
@@ -743,8 +745,8 @@ static NSString * const reuseHeaderViewIdentifier = @"CustomCollectionReusableVi
             NSMutableAttributedString *strAllNote;
             NSMutableAttributedString *attrStringRemove;
             NSMutableAttributedString *attrStringAdd;
-            NSString *strRemoveTypeNote = [OrderNote getNoteNameListInTextWithOrderTakingID:orderTaking.orderTakingID noteType:-1 branchID:credentialsDb.branchID];
-            NSString *strAddTypeNote = [OrderNote getNoteNameListInTextWithOrderTakingID:orderTaking.orderTakingID noteType:1 branchID:credentialsDb.branchID];
+            NSString *strRemoveTypeNote = [OrderNote getNoteNameListInTextWithOrderTakingID:orderTaking.orderTakingID noteType:-1];
+            NSString *strAddTypeNote = [OrderNote getNoteNameListInTextWithOrderTakingID:orderTaking.orderTakingID noteType:1];
             if(![Utility isStringEmpty:strRemoveTypeNote])
             {
                 NSString *message = [Setting getValue:@"011m" example:@"ไม่ใส่"];
@@ -881,8 +883,8 @@ static NSString * const reuseHeaderViewIdentifier = @"CustomCollectionReusableVi
             NSMutableAttributedString *strAllNote;
             NSMutableAttributedString *attrStringRemove;
             NSMutableAttributedString *attrStringAdd;
-            NSString *strRemoveTypeNote = [OrderNote getNoteNameListInTextWithOrderTakingID:orderTaking.orderTakingID noteType:-1 branchID:credentialsDb.branchID];
-            NSString *strAddTypeNote = [OrderNote getNoteNameListInTextWithOrderTakingID:orderTaking.orderTakingID noteType:1 branchID:credentialsDb.branchID];
+            NSString *strRemoveTypeNote = [OrderNote getNoteNameListInTextWithOrderTakingID:orderTaking.orderTakingID noteType:-1];
+            NSString *strAddTypeNote = [OrderNote getNoteNameListInTextWithOrderTakingID:orderTaking.orderTakingID noteType:1];
             if(![Utility isStringEmpty:strRemoveTypeNote])
             {
                 NSString *message = [Setting getValue:@"011m" example:@"ไม่ใส่"];
@@ -1058,10 +1060,11 @@ static NSString * const reuseHeaderViewIdentifier = @"CustomCollectionReusableVi
         }
         else
         {
-            [Receipt addList:[items[0] mutableCopy]];
-            [OrderTaking addList:[items[1] mutableCopy]];
-            [OrderNote addList:[items[2] mutableCopy]];
-            [ReceiptPrint addList:[items[3] mutableCopy]];
+            [Utility updateSharedObject:items];
+//            [Receipt addList:[items[0] mutableCopy]];
+//            [OrderTaking addList:[items[1] mutableCopy]];
+//            [OrderNote addList:[items[2] mutableCopy]];
+//            [ReceiptPrint addList:[items[3] mutableCopy]];
             
             
             [self reloadTableView];

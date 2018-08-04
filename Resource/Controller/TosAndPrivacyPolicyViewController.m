@@ -85,6 +85,12 @@
         lblNavTitle.text = title;
         [self webViewLoadUrl:[Utility url:urlTermsOfService]];
     }
+    else if(pageType == 2)
+    {
+        NSString *title = [Setting getValue:@"102t" example:@"ติดต่อ JUMMUM"];
+        lblNavTitle.text = title;
+        [self webViewLoadUrl:[Utility url:urlContactUs]];
+    }
 
     
     [self addWebView:webViewContainer];

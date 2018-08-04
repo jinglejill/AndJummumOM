@@ -183,49 +183,6 @@
     }
     return strNote;
 }
-+(NSString *)getNoteNameListInTextWithOrderTakingID:(NSInteger)orderTakingID
-{
-    int i=0;
-    NSString *strAllNote = @"";
-    NSString *strRemoveTypeNote = @"";
-    NSString *strAddTypeNote = @"";
-    NSMutableArray *removeTypeNoteList = [OrderNote getNoteListWithOrderTakingID:orderTakingID noteType:-1];
-    NSMutableArray *addTypeNoteList = [OrderNote getNoteListWithOrderTakingID:orderTakingID noteType:1];
-    if([removeTypeNoteList count] > 0)
-    {
-        for(Note *item in removeTypeNoteList)
-        {
-            if(i == [removeTypeNoteList count]-1)
-            {
-                strRemoveTypeNote = [NSString stringWithFormat:@"%@%@",strRemoveTypeNote,item.name];
-            }
-            else
-            {
-                strRemoveTypeNote = [NSString stringWithFormat:@"%@%@,",strRemoveTypeNote,item.name];
-            }
-            i++;
-        }
-    }
-    
-    if([addTypeNoteList count] > 0)
-    {
-        for(Note *item in addTypeNoteList)
-        {
-            if(i == [addTypeNoteList count]-1)
-            {
-                strAddTypeNote = [NSString stringWithFormat:@"%@%@",strAddTypeNote,item.name];
-            }
-            else
-            {
-                strAddTypeNote = [NSString stringWithFormat:@"%@%@,",strAddTypeNote,item.name];
-            }
-            i++;
-        }
-    }
-    
-    strAllNote = strRemoveTypeNote;
-    return strAllNote;
-}
 
 +(NSString *)getNoteIDListInTextWithOrderTakingID:(NSInteger)orderTakingID
 {
@@ -341,33 +298,11 @@
     return [SharedOrderNote sharedOrderNote].orderNoteList;
 }
 
-+(NSString *)getNoteNameListInTextWithOrderTakingID:(NSInteger)orderTakingID noteType:(NSInteger)noteType branchID:(NSInteger)branchID
-{
-    int i=0;
-    NSString *strNote = @"";
-    NSMutableArray *noteList = [OrderNote getNoteListWithOrderTakingID:orderTakingID noteType:noteType branchID:branchID];
-    if([noteList count] > 0)
-    {
-        for(Note *item in noteList)
-        {
-            if(i == [noteList count]-1)
-            {
-                strNote = [NSString stringWithFormat:@"%@%@",strNote,item.name];
-            }
-            else
-            {
-                strNote = [NSString stringWithFormat:@"%@%@,",strNote,item.name];
-            }
-            i++;
-        }
-    }
-    return strNote;
-}
-
 +(NSMutableArray *)getNoteListWithOrderTakingID:(NSInteger)orderTakingID noteType:(NSInteger)noteType branchID:(NSInteger)branchID
 {
     NSMutableArray *dataList = [SharedOrderNote sharedOrderNote].orderNoteList;
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"_orderTakingID = %ld and _branchID = %ld",orderTakingID,branchID];
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"_orderTakingID = %ld and _branchID = %ld",orderTakingID,branchID];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"_orderTakingID = %ld",orderTakingID];
     NSArray *filterArray = [dataList filteredArrayUsingPredicate:predicate];
     
     

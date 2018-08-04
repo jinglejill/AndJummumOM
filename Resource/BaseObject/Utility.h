@@ -298,7 +298,8 @@ enum enumUrl
     urlBranchGet,
     urlOpeningTimeTextGet,
     urlSettingUpdate,
-    urlSettingGet
+    urlSettingGet,
+    urlContactUs
 //    ,
 //    urlTestPasswordInsertList
     

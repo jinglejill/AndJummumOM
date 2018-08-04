@@ -47,7 +47,6 @@ static NSString * const reuseIdentifierLabelSwitch = @"CustomTableViewCellLabelS
     
     float topPadding = window.safeAreaInsets.top;
     topViewHeight.constant = topPadding == 0?20:topPadding;
-//    tbvMe.layer.borderWidth = 1;
 }
 
 -(void)loadView
@@ -56,13 +55,15 @@ static NSString * const reuseIdentifierLabelSwitch = @"CustomTableViewCellLabelS
 
     NSString *message = [Setting getValue:@"059m" example:@"ข้อกำหนดและเงื่อนไข"];
     NSString *message2 = [Setting getValue:@"060m" example:@"ตั้งค่าระบบการสั่งอาหารด้วยตนเอง"];
-    NSString *message3 = [Setting getValue:@"061m" example:@"Log out"];
-    _aboutUsList = @[message,message2,message3];
-    _aboutUsImageList = @[@"termsOfService.png",@"selfService.png",@"logOut.png"];
+    NSString *message3 = [Setting getValue:@"101m" example:@"ติดต่อ JUMMUM"];
+    NSString *message4 = [Setting getValue:@"061m" example:@"Log out"];
+    _aboutUsList = @[message,message2,message3,message4];
+    _aboutUsImageList = @[@"termsOfService.png",@"selfService.png",@"contactUs.png",@"logOut.png"];
     tbvMe.delegate = self;
     tbvMe.dataSource = self;
     
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -112,10 +113,6 @@ static NSString * const reuseIdentifierLabelSwitch = @"CustomTableViewCellLabelS
     cell.singleTapGestureRecognizer.numberOfTapsRequired = 1;
     
     
-    
-//    NSLog(@"test tbvData y,height: %f,%f",tbvMe.frame.origin.y,tbvMe.frame.size.height);
-//    NSLog(@"test tbvMeTop : %f",tbvMeTop.constant);
-//    tbvMeTop.constant = 66;
 }
 
 ///tableview section
@@ -143,29 +140,14 @@ static NSString * const reuseIdentifierLabelSwitch = @"CustomTableViewCellLabelS
     
     if([tableView isEqual:tbvMe])
     {
-//        if(section == 0)
-//        {
-//            CustomTableViewCellProfile *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifierProfile];
-//            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//
-//
-//            cell.imgValue.layer.cornerRadius = 35;
-//            cell.imgValue.layer.masksToBounds = YES;
-//            cell.imgValue.layer.borderWidth = 0;
-//
-//            return cell;
-//        }
-//        else
-        {
-            CustomTableViewCellImageText *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifierImageText];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            
-            
-            cell.imgVwIcon.image = [UIImage imageNamed:_aboutUsImageList[item]];
-            cell.lblText.text = _aboutUsList[item];
-            cell.lblText.textColor = cSystem4;
-            return cell;
-        }
+        CustomTableViewCellImageText *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifierImageText];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        
+        cell.imgVwIcon.image = [UIImage imageNamed:_aboutUsImageList[item]];
+        cell.lblText.text = _aboutUsList[item];
+        cell.lblText.textColor = cSystem4;
+        return cell;
     }
     
     return nil;
@@ -175,14 +157,7 @@ static NSString * const reuseIdentifierLabelSwitch = @"CustomTableViewCellLabelS
 {
     if([tableView isEqual:tbvMe])
     {
-//        if(indexPath.section == 0)
-//        {
-//            return 90;
-//        }
-//        else
-        {
-            return 44;
-        }
+        return 44;
     }
     
     return 0;
@@ -199,40 +174,39 @@ static NSString * const reuseIdentifierLabelSwitch = @"CustomTableViewCellLabelS
     
     if([tableView isEqual:tbvMe])
     {
-//        if(indexPath.section == 0)
-//        {
-//            [self performSegueWithIdentifier:@"segPersonalData" sender:self];
-//        }
-//        else
+        switch (indexPath.item)
         {
-            switch (indexPath.item)
+            case 0:
             {
-                case 0:
-                {
-                    _pageType = 1;
-                    [self performSegueWithIdentifier:@"segTosAndPrivacyPolicy" sender:self];
-                }
-                    break;
-                case 1:
-                {                    
-                    [self performSegueWithIdentifier:@"segOpeningTime" sender:self];
-                }
-                    break;
-                case 2:
-                {
-                    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"logInSession"];
-                    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"rememberMe"];
-                    [[NSUserDefaults standardUserDefaults] setValue:@"" forKey:@"rememberEmail"];
-                    [[NSUserDefaults standardUserDefaults] setValue:@"" forKey:@"rememberPassword"];
-                    
-                    
-                    NSString *message = [Setting getValue:@"062m" example:@"ออกจากระบบสำเร็จ"];
-                    [self showAlert:@"" message:message method:@selector(unwindToLogIn)];
-                }
-                    break;
-                default:
-                    break;
+                _pageType = 1;
+                [self performSegueWithIdentifier:@"segTosAndPrivacyPolicy" sender:self];
             }
+                break;
+            case 1:
+            {
+                [self performSegueWithIdentifier:@"segOpeningTime" sender:self];
+            }
+                break;
+            case 2:
+            {
+                _pageType = 2;
+                [self performSegueWithIdentifier:@"segTosAndPrivacyPolicy" sender:self];
+            }
+                break;
+            case 3:
+            {
+                [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"logInSession"];
+                [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"rememberMe"];
+                [[NSUserDefaults standardUserDefaults] setValue:@"" forKey:@"rememberEmail"];
+                [[NSUserDefaults standardUserDefaults] setValue:@"" forKey:@"rememberPassword"];
+                
+                
+                NSString *message = [Setting getValue:@"062m" example:@"ออกจากระบบสำเร็จ"];
+                [self showAlert:@"" message:message method:@selector(unwindToLogIn)];
+            }
+                break;
+            default:
+                break;
         }
     }
 }
